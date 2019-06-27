@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Credit Card Name</string>
+    <string name="credit_card_number">5555 5555 5555 4444</string>
+    <string name="hint_your_name">Your name</string>
+    <string name="btn_convert_text">Convert</string>
+    <string name="converted_name">YOUR NAME HERE</string>
+</resources>
