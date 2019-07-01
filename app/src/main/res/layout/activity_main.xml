@@ -48,14 +48,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/credit_card_number"
-            android:textSize="@dimen/large_text"
             android:layout_marginLeft="@dimen/credit_card_left_margin"
-            android:textColor="@color/colorGray"
-
-            app:layout_constraintTop_toBottomOf="@id/btConvertName"
-            android:layout_marginTop="@dimen/label_credit_card_margin_top"
+            style="@style/CreditCardInfo"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginStart="@dimen/credit_card_left_margin"/>
+            app:layout_constraintTop_toTopOf="@+id/vCreditCard"
+            app:layout_constraintBottom_toBottomOf="@+id/vCreditCard" android:id="@+id/textView"
+            app:layout_constraintVertical_bias="0.24000001"/>
 
 
     <View
@@ -75,14 +73,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/converted_name"
-            android:textSize="@dimen/large_text"
             android:layout_marginLeft="@dimen/converted_name_margin"
-            android:textColor="@color/colorGray"
-            app:layout_constraintBottom_toBottomOf="@id/vCreditCard"
-            app:layout_constraintTop_toBottomOf="@id/btConvertName"
-            android:layout_marginTop="@dimen/converted_name_margin_top"
+            app:layout_constraintBottom_toBottomOf="@+id/vCreditCard"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginStart="@dimen/converted_name_margin_start"/>
+            style="@style/CreditCardInfo" app:layout_constraintVertical_bias="0.85"
+            app:layout_constraintTop_toTopOf="@+id/vCreditCard"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
