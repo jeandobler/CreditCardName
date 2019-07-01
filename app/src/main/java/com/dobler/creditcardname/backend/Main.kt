@@ -14,16 +14,11 @@ fun main() {
             break
         }
 
-
         print("Your Credit Card Name is: ")
-
 
         val converted = CreditCardNameConverter.convert(name)
         print(converted)
 
         println("")
-
     }
-
-
 }

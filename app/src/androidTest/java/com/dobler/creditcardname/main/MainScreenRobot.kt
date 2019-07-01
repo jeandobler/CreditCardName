@@ -6,7 +6,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import com.dobler.creditcardname.R
 
 
-fun mainScreen(func: MainScreenRobot.() -> Unit) = MainScreenRobot()
+fun actRobot(func: MainScreenRobot.() -> Unit) = MainScreenRobot()
     .apply { func() }
 
 class MainScreenRobot {
@@ -16,9 +16,8 @@ class MainScreenRobot {
             .perform(ViewActions.replaceText(name), ViewActions.closeSoftKeyboard())
     }
 
-    infix fun clickOnConvertButton(func: ResultRobot.() -> Unit): ResultRobot {
+    fun clickOnConvertButton() {
         onView((withId(R.id.btConvertName))).perform(ViewActions.click())
-        return ResultRobot().apply { func }
     }
 
 
